@@ -1,0 +1,8 @@
+<h1> Welcome to Clipped - your one stop hub for gaming videos!</h1>
+<p class="intro"> Use Clipped to upload, share, and catalog all of your gaming clips.</p>
+<div class="clipGridDiv">
+    <h2>Recent Clips</h2>
+    {{#each clips}}
+        {{> clipDiv clip=this}}
+    {{/each}}
+</div>

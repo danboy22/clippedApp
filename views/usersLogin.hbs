@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link href="./stylesheets/site.css" type="text/css" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href='./images/favicon.png' />
+</head>
+
+<body>
+  <div class="container">
+        <header>
+      <ul>
+      </ul>
+    </header>
+    <main>
+	<h1>Login</h1>
+<div class="form">
+    <form action='/users/login' method="POST">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+        <p></p>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <p></p>
+        
+        <input type="submit" value="Login">
+    </form>
+</div>
+    </main>
+  </div>
+  <footer></footer>
+
+</body>
+
+</html>

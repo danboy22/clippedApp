@@ -1,0 +1,16 @@
+      <div class="myClipDiv">
+        <p>Name: {{clip.clipName}}</p>
+        <p>Game: {{clip.clipGame}}</p>
+        <div class="videoDiv">
+        <video controls width="320px" height="180px">
+          <source src="/clips/{{clip.clipFile}}" type="video/mp4">
+        </video>
+        </div>
+        <p><span>Date:</span>  {{clip.clipDate}}</p>
+        <p>
+        <a class="btn" href='/clip/{{clip.id}}'>Watch</a>
+        <span></span>
+        <a href="/clip/edit/{{clip.id}}">Edit</a>
+        </p>
+
+      </div>

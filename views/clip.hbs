@@ -1,0 +1,23 @@
+<body>
+        <p>Creator: <a href="/creator/{{clip.creator.id}}">{{clip.creator.username}}</a></p>
+        <p>Name: {{clip.clipName}}</p>
+        <p>Date: {{clip.clipDate}}</p>
+        <p>Game: {{clip.clipGame}}</p>
+        <div class="videoDiv">
+        <video width="1080px" controls>
+            <source src="/clips/{{clip.clipFile}}">
+        </video>
+         </div>
+        <p> Description: {{clip.clipDescription}} </p>
+        {{#if isMyClip}}
+         <a href="/clip/edit/{{clip.id}}">Edit Clip</a>
+         {{/if}}
+        
+        {{!-- <h2> Comments </h2>
+        {{clip.comments}}   
+        <form action="/clip/{{clip.id}}" method="POST" enctype="multipart/form-data">
+        <label for="newComment"></label>
+            <input type="text" id="newComment" name="newComment" />
+            <input type="submit" value="Post Comment" />
+        </form> --}}
+</body>
