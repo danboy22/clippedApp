@@ -34,19 +34,6 @@ mongoose.connect(process.env.DB_URI, {
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-// //SET STORAGE
-// const storage = multer.diskStorage({
-//   destination: function(req, file, cb) {
-//     cb(null, 'uploads')
-//   },
-//   filename: function(req, file, cb) {
-//     cb(null, file.fieldname + '-' + Date.now())
-//   }
-// })
-
-// const upload = multer({storage: storage})
-
-
 // register partials
 hbs.registerPartials(path.join(__dirname + "/views/partials"))
 
