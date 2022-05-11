@@ -1,0 +1,39 @@
+  <body>
+    <div class="container">
+      <main>
+        <h1>Edit Clip</h1>
+                <video width="1080px" controls>
+            <source src="/clips/{{clip.clipFile}}">
+        </video>
+        <p></p>
+        <div class="form">
+          <form
+            action="/clip/edit/{{clip.id}}"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+
+            <label for="clipName">Clip Name*</label>
+            <input type="text" id="clipName" name="clipName" value="{{clip.clipName}}" />
+            <p></p>
+
+            <label for="clipDescription">Clip Description</label>
+            <textarea id="clipDescription" name="clipDescription"> {{clip.clipDescription}} </textarea>
+            <p></p>
+
+            <input type="submit" value="Update Clip" />
+
+
+            <p></p>
+            <p></p>
+            <p>
+            <a href="/clip/delete/{{clip.id}}">Delete Clip</a>
+            <br>
+            (**This Action Is Final!**)
+            </p>
+          </form>
+        </div>
+      </main>
+    </div>
+
+  </body>

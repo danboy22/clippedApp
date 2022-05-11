@@ -1,0 +1,12 @@
+      <div class="clipDiv">
+        <p><b>Creator:</b> <a href="/creator/{{clip.creator.id}}">{{clip.creator.username}}</a></p>
+        <p><b>Name:</b> {{clip.clipName}}</p>
+        <p><b>Game:</b> {{clip.clipGame}}</p>
+        <div class="videoDiv">
+        <video align="center" controls width="320px" height="180px">
+          <source src="/clips/{{clip.clipFile}}" type="video/mp4">
+        </video>
+        </div>
+        <p><span><b>Date:</b></span>  {{clip.clipDate}}</p>
+        <p><a class="btn" href='/clip/{{clip.id}}'>Watch</a></p>
+      </div>

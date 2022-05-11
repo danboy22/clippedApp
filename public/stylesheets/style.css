@@ -1,0 +1,116 @@
+a {
+    text-align: center;
+}
+
+body {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+div.container {
+    display: block;
+    background: darkblue;
+    color: white
+}
+
+div.clipDiv {
+    display: inline-block;
+    border: 5px solid white;
+    background: darkblue;
+    width: 23%;
+    vertical-align: top;
+    color: white
+}
+
+div.clipGridDiv {
+    background: darkblue;
+    color: white;
+    margin-bottom: 10px;
+}
+
+div.profileDiv {
+    text-align: center;
+    background-color: darkblue;
+    color: white
+}
+div.myClipDiv {
+    display: inline-block;
+    border: 5px solid white;
+    background: darkblue;
+    width: 23%;
+    vertical-align: top;
+    color: white
+}
+
+div.videoDiv {
+    text-align: center;
+}
+
+div a {
+    color: white
+}
+
+div p a {
+    color: white
+}
+
+footer {
+    background: darkblue;
+    color: white;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+img {
+    height: 400px;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+header {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    background-color: darkblue;
+}
+
+header ul{
+    text-align: center;
+}
+header ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+header ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+}
+
+

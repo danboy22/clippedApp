@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clipped</title>
+  <link href="/stylesheets/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <ul>
+        <li><a href="/">Home</a></li>
+        {{#if loggedIn}}
+        <li><a href="/myProfile">My Profile</a></li>
+        <li><a href="/upload">Upload</a></li>
+        <li><a href="/users/logout">Logout</a></li>
+        {{else}}
+        <li><a href="/users/register">Register</a></li>
+        <li><a href="/users/login">Login</a></li>
+        {{/if}}
+      </ul>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+  </div>
+  <footer><h2>~Clipped~</h2></footer>
+</body>
+
+</html>

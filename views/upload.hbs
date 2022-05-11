@@ -1,0 +1,40 @@
+  <body>
+    <div class="container">
+      <main>
+        <h1>Upload Clip</h1>
+        <div class="form">
+          <form
+            action="/upload"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+
+            <label for="clipName">*Clip Name:</label>
+            <p></p>
+            <input type="text" id="clipName" name="clipName" />
+            <p></p>
+            <label for="clipDate">*Clip Date:</label>
+            <input type="string" id="clipDate" name="clipDate" />
+            <p></p>
+            <p></p>
+
+            <label for="clipGame">*Game:</label>
+            <input type="text" id="clipGame" name="clipGame" />
+            <p></p>
+
+            <label for="clipFile">*File:</label>
+            <input type="file" id="clipFile" name="clipFile" />
+            <p></p>
+
+            <label for="clipDescription">Clip Description:</label>
+            <textarea id="clipDescription" name="clipDescription"></textarea>
+            <p></p>
+
+            <input type="submit" value="Upload Clip" />
+          </form>
+          <h3> *Required Field </h3>
+        </div>
+      </main>
+    </div>
+
+  </body>
